@@ -7,9 +7,9 @@ $('document').ready(function(){
 		$(window).resize(function(){
 			 vw = $(window).width()/2;
 			$('#b1,#b2,#b3,#b4,#b5,#b6,#b7').stop();
-			$('#b11').animate({top:240, left: vw-350},500);
-			$('#b22').animate({top:240, left: vw-250},500);
-			$('#b33').animate({top:240, left: vw-150},500);
+			$('#b11').animate({top:240, left: vw-350},300);
+			$('#b22').animate({top:240, left: vw-250},300);
+			$('#b33').animate({top:240, left: vw-150},300);
 			$('#b44').animate({top:240, left: vw-50},500);
 			$('#b55').animate({top:240, left: vw+50},500);
 			$('#b66').animate({top:240, left: vw+150},500);
@@ -54,7 +54,7 @@ $('document').ready(function(){
 	function loopOne() {
 		var randleft = 1000*Math.random();
 		var randtop = 500*Math.random();
-		$('#b1').animate({left:randleft,bottom:randtop},1000,function(){
+		$('#b1').animate({left:randleft,bottom:randtop},10000,function(){
 			loopOne();
 		});
 	}
